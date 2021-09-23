@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <script src="/javascripts/index.js"></script>
+
+  </head>
+  <body>
+    <h1><%= title %></h1>
+
+
+    <form id=“xForm" method = 'POST' action="/cloth">
+        <label for='title'> title:</label>
+        <input type="text" name="title" id="title" value="this is title">
+        <p><label for='description'>description:</label>
+                <input type="text" name="description" id="description" value="this is description">
+        </p>
+        <p><label for='year'>price:</label>
+                <input type="number" name="price" id="price" value="5">
+        </p>
+        <p><input type="submit" name="g" value="Submit" id="g"></p>
+    </form>
+  <div id="results" style="margin-top:30px"></div>
+
+  </body>
+</html>
