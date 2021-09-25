@@ -65,3 +65,25 @@ exports.signup = (req, res) => {
         });
     });
 };
+
+exports.login = (req, res) => {
+    console.log(req.body);
+    user_signup.find({"email":req.body.email})
+    .then(user => {
+        if(!user) {
+            return res.status(404).send({
+                message: "user not found with id " + req.body.email
+            });            
+        }
+        res.send(user);
+    }).catch(err => {
+        if(err.kind === 'ObjectId') {
+            return res.status(404).send({
+                message: "user not found with id " + req.body.email
+            });                
+        }
+        return res.status(500).send({
+            message: "Something wrong retrieving user with id " + req.body.email
+        });
+    });
+};

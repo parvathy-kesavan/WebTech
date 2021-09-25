@@ -1,14 +1,11 @@
 <html>
 <body>
 
-    <form id=“xForm" method = 'GET' action="/login">
-        <label for='title'> title:</label>
-        <input type="text" name="title" id="title" value="this is title">
-        <p><label for='description'>description:</label>
-                <input type="text" name="description" id="description" value="this is description">
-        </p>
-        <p><label for='year'>price:</label>
-                <input type="number" name="price" id="price" value="5">
+    <form id=“xForm" method = 'POST' action="/login">
+        <label for='title'> email:</label>
+        <input type="text" name="email" id="email" value="email">
+        <p><label for='password'>password:</label>
+                <input type="text" name="password" id="password" value="">
         </p>
         <p><input type="submit" name="g" value="Submit" id="g"></p>
     </form>
