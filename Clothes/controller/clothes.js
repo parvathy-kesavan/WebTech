@@ -75,7 +75,8 @@ exports.login = (req, res) => {
                 message: "user not found with id " + req.body.email
             });            
         }
-        res.send(user);
+        //res.send(user);
+        res.render('landing')
     }).catch(err => {
         if(err.kind === 'ObjectId') {
             return res.status(404).send({

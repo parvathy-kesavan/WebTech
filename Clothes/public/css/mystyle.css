@@ -1,0 +1,44 @@
+.side-nav-bar {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    padding: 58px 0 0; /* Height of navbar */
+    box-shadow: 0 2px 5px 0 rgb(0 0 0 / 5%), 0 2px 10px 0 rgb(0 0 0 / 5%);
+    width: 240px;
+    z-index: 600;
+  }
+.list-color {
+    background-color: rgb(203, 241, 241);
+    color: rgb(10, 10, 56);
+}
+
+.navbar-right {
+    float: right;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+.navbar-icon {
+    padding-top: 20px;
+    color: cornsilk;
+}
+
+.navbar-header {
+    float: none;
+}
+.navbar-title {
+    padding-top: 20px;
+    color: cornsilk;
+}
+
+.navbar-toggle {
+    float: left;
+    margin-left: 20px;
+}
+
+@media screen and (max-width:768px){
+    .side-nav-bar {
+        top: 10%;
+    }
+}

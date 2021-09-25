@@ -1,14 +1,51 @@
 <html>
-<body>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <!-- <link rel="stylesheet" type="text/css" href="/WebTech/Clothes/views/mystyle.css"> -->
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
-    <form id=“xForm" method = 'POST' action="/login">
-        <label for='title'> email:</label>
-        <input type="text" name="email" id="email" value="email">
-        <p><label for='password'>password:</label>
-                <input type="text" name="password" id="password" value="">
-        </p>
-        <p><input type="submit" name="g" value="Submit" id="g"></p>
-    </form>
+        <!-- Latest compiled JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <!-- <script>
+            var link = document.createElement('link');
+            link.rel = 'stylesheet';
+            link.type = 'text/css';
+            link.href = '/views/mystyle.css';
+        </script> -->
+        <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous"> -->
+        <link rel="stylesheet" href="/css/mystyle.css">
+    </head>
+<body>
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <a class="navbar-right navbar-icon" href="#"><span class="glyphicon glyphicon-user"></span> Sign up</a>
+            <a class="navbar-brand" href="#">Arjun's Cloth Shop</a>
+            <form class="navbar-form navbar-right" action="/action_page.php">
+                <div class="input-group">
+                <input type="text" class="form-control" placeholder="Search" name="search">
+                <div class="input-group-btn">
+                    <button class="btn btn-default" type="submit">
+                    <i class="glyphicon glyphicon-search"></i>
+                    </button>
+                </div>
+                </div>
+            </form>
+          </div>
+        </div>
+    </nav>
+    <div style="margin-top: 10%; margin-left: 32%;" class="input-group container-fluid"">
+        <form id=“xForm" method = 'POST' action="/login">
+        
+            <input style="margin-top: 20px" class="form-control" type="text" name="title" id="title" placeholder="username">
+            <input style="margin-top: 20px" class="form-control" type="text" name="description" id="description" placeholder="password">
+            <input style="margin-top: 20px; margin-left: 45%" class="btn-primary" type="submit" name="submit" value="Submit" id="g">
+        </form>
+    </div>
+    
 
 </body>
 
